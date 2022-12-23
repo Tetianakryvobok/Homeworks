@@ -8,6 +8,16 @@ body{
    .position{
       font-weight: bold;
    }
+   .wrapper a {
+      color: #00f;
+      text-decoration: underline;
+   }
+   a:visited{
+      color: #005;
+   }
+   a:hover{
+      text-decoration: none;
+   }
    th{
    text-transform: uppercase;
    }
@@ -15,17 +25,7 @@ body{
    text-transform: uppercase;
    font-weight: bold;
   }
-  .link{
-   color: #00f;
-   text-decoration: underline;
-  }
-  .link:visited{
-   color: #005 ;
-   text-decoration: underline;
-  }
-  .link:hover{
-   text-decoration: none;
-  }
+  
   .skills{
    list-style-type: square;
   }
