@@ -21,11 +21,7 @@ body{
    th{
    text-transform: uppercase;
    }
-  .boldhead{
-   text-transform: uppercase;
-   font-weight: bold;
-  }
   
-  .skills{
+    .skills{
    list-style-type: square;
   }
