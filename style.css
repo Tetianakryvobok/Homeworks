@@ -26,8 +26,9 @@ body{
     .skills{
    list-style-type: square;
   }
-  h1,p,ul,ol{
-   border-bottom: 2px solid rgba(61, 61, 63, 0.596);
+  
+  .border{
+   border-bottom:2px solid rgba(61, 61, 63, 0.596);
   }
   img{
    border: 2px solid rgba(17, 61, 58, 0.61);
