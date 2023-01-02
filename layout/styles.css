@@ -7,9 +7,25 @@ body{
 }
 .wrapper{
    
+   }
+
+.header{
    display: flex;
-   flex-direction: column;
-   min-height: 100%;
-   max-width: 2000px;
+   background-color: #E5E5E5;
+   height: 847px;
+   width: 2034px;
+   left: -28.45px;
+   background: url(./flower-pattern.jpg);
+   background-repeat: no-repeat;
+}
+.topheader{
+   font-family: 'Popins', sans-serif;
+   font-weight: 400;
+   
+  
+   
+
+
 
 }
+
