@@ -2,9 +2,7 @@ body{
    font-family: Arial, Helvetica, sans-serif;
    color:#333 ;
    }
-   .wrapper{
-     
-   }
+  
    h1{
       font-style: italic;
       
@@ -34,23 +32,28 @@ body{
   .border{
    border-bottom:2px solid rgba(61, 61, 63, 0.596);
   }
-  
+
+ 
    img{
    border: 2px solid rgba(17, 61, 58, 0.61);
    padding: 10px;
    max-width: 100px;
    max-height: 100px;
-  
+   float: right;
+   
   }   
  
-     
-    table{
-   background-color: rgba(222,219,167,1);
-  }
-  
-  .wrap1{
-     display: flex;
-     
-  }
-  
+  .head{
+   float: left;
+  } 
 
+  .table{
+   clear: both;
+   }
+
+  table{
+   background-color: rgba(222,219,167,1); 
+   width: 100%;
+   }
+   
+  
