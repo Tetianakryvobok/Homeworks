@@ -6,26 +6,47 @@ body{
    height: 100%;
 }
 .wrapper{
+   max-width: 1920px;
+   
    
    }
-
-.header{
-   display: flex;
-   background-color: #E5E5E5;
-   height: 847px;
-   width: 2034px;
-   left: -28.45px;
-   background: url(./flower-pattern.jpg);
-   background-repeat: no-repeat;
+.header_wrapper{
+    background-color:#E5E5E5;
+    background-size:  100%;
+   
+   
 }
-.topheader{
+.headerwrap{
    font-family: 'Popins', sans-serif;
    font-weight: 400;
-   
+}
+
+.topheader{
+   padding: 36px 387px 0px 328px;
+   text-align: right;
   
    
-
-
-
 }
+.icon_of_account{
+   background-image: url(./User.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   padding: 5px 0 0 30px;
+}
+
+.icon_of_shopping{
+   padding: 0 0 0 80px;
+}
+.categories{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+   
+.categories a{
+   display: block;
+}
+
+
+
 
