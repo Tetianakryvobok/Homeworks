@@ -71,23 +71,23 @@ margin-left: 15px;
    
 }
 
-.head_banner{
+.header_section{
 margin: 50px 0 0 20px;
 width: 1230px;
 height: 562px;
 line-height: 55px;
 font-family:'Roboto',serif ;
 }
-.banner{
+.header_banner{
  float: left;
    
 }
-.banner h1{
+.header_banner h1{
 font-weight: 300;
 font-size: 74px;
 
 }
-.banner p{
+.header_banner p{
 text-transform: capitalize;
 font-size: 30px;
 font-weight: 400;
@@ -222,12 +222,13 @@ text-transform: capitalize;
 text-decoration: none;
 color: grey;
 padding-right: 15px;
+
 }
 .products span{
 color: black;
 }
 
-.filter{
+.filter_button{
 width: 88px;
 height: 32px;
 border: 1px solid black;
@@ -238,12 +239,13 @@ text-align: center;
 margin-right: 40px;
 
 }
-.filter span{
+.filter_button span{
 background-image: url(/layout/img/bottomVector.png);
 background-repeat: no-repeat;
 background-position: left;
 padding-left: 20px;
 color: #FFFFFF;
+font-weight: normal;
 
 
 }
@@ -253,7 +255,9 @@ color: black;
 font-weight: 600;
 display: flex;
 justify-content: space-between;
+align-items: center;
 gap: 25px;
+flex-wrap: wrap;
 }
 .products_wrapper>h3{
 text-transform: capitalize;   
@@ -266,41 +270,75 @@ height: 477px;
 padding-top: 10px;
 }
 
-.product1_price_t {
+.nameofproduct {
  color: grey;
  font-weight: 400;
 }
-.product1_price_n {
+.priceofproduct {
 float: right;
 }
 
-.product2_price_t {
-   color: grey;
-   font-weight: 400;
-  }
-  .product2_price_n {
-  float: right;
-  }
-  .product3_price_t {
-   color: grey;
-   font-weight: 400;
-  }
-  .product3_price_n {
-  float: right;
-  }
-  .product4_price_t {
-   color: grey;
-   font-weight: 400;
-  }
-  .product4_price_old {
-   float: right;
-   font-size: 14px;
-   color: gray;
-   text-decoration: line-through;
+.oldpriceofproduct {
+padding-left: 30px;
+font-size: 14px;
+color: gray;
+text-decoration: line-through;
    }
-   .product4_price_n {
-  clear: both;
-   color: red;
-  }
+
+.color{
+ color: red;  
+}
+   
  
  
+   .banner_wrapper {
+      margin: 0 auto;
+      margin-top: 60px;
+      width: 1320px;
+      height: 776px;
+      background-image: url(/layout/img/andrey-zvyagintsev-EQj1ZMpq_VM-unsplash\ 1.jpg);
+      background-repeat: no-repeat;
+      background-size:  cover;
+           
+   }
+   
+   .banner_title {
+   font-family:'Roboto', serif ;
+   font-size: 26px;
+   font-weight: 400;
+   line-height: 30px;
+   color: #FFFFFF;
+   text-transform: capitalize;
+   padding: 350px 0px 100px 800px;
+   
+     }
+   .banner_bottom {
+   
+   }
+.section2{
+   margin-left: 20px;
+}
+   .show_button{
+      width: 88px;
+      height: 32px;
+      border: 1px solid black;
+      background-color: #1E2832;
+      padding-top: 5px;
+      float:right;
+      text-align: center;
+      margin-right: 40px;
+      
+      }
+      .show_button span{
+      padding-left: 20px;
+      color: #FFFFFF;
+      font-weight: normal;}
+
+   .bottom_product1_price_t{
+      color: grey;
+      font-weight: 400;
+   }
+
+   .bottomproduct1_price_n {
+      float: right;
+      }
