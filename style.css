@@ -5,16 +5,28 @@
 
 body{
    font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+
   }
   
 .wrapper{
    color: rgba(30, 30, 30, 1);
    max-width: 1200px;
-   display: grid;
-   grid-template-columns: 385px auto;
+   display:flex;
    justify-content: center;
-   align-items: center;
+   align-items: center; 
+
 }
+
+
+   
+.mainhead{
+font-size: 40px;
+line-height: 48px;
+color: rgba(28, 46, 140, 1);
+}
+
+
 .header{
    
    background: #86A3B4;
@@ -25,6 +37,12 @@ body{
    .head{
    font-size: 36px;
    line-height: 44px;
+   }
+
+   .header >p{
+   font-size: 20px;
+   line-height: 24px;
+   color: #1E1E1E;
    }
    .smallerfont{
     font-size: 32px;
@@ -43,8 +61,32 @@ body{
   }   
  
  
-  .maincontainer{
+.maincontainer{
    width: 706px;
    padding: 58px 55px 0 55px ;
-
   }
+
+ .maincontainer p{
+   margin: 0;
+ }
+.textstyle{
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+color: #263036;
+}
+
+.bold{
+   font-weight: bold;
+}
+.fonttype{
+font-size: 14px;
+line-height: 17px;}
+
+.block-1{
+   margin: 31px 54px 0 0;
+}
+
+.block-2{
+   margin: 15px 54px 0 0;
+}
