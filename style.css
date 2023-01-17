@@ -1,59 +1,50 @@
+*{
+  
+}
+
+
 body{
    font-family: Arial, Helvetica, sans-serif;
-   color:#333 ;
-   }
-  
-   h1{
-      font-style: italic;
-      
-   }
-   .position{
-      font-weight: bold;
-   }
-   .wrapper a {
-      color: #00f;
-      text-decoration: underline;
-   }
-   a:visited{
-      color: #005;
-   }
-   a:hover{
-      text-decoration: none;
-   }
-   th{
-   text-transform: uppercase;
-   background-color: rgba(114, 176, 149, 0.822);
-   }
-  
-    .skills{
-   list-style-type: square;
   }
   
-  .border{
-   border-bottom:2px solid rgba(61, 61, 63, 0.596);
-  }
+.wrapper{
+   color: rgba(30, 30, 30, 1);
+   max-width: 1200px;
+   display: grid;
+   grid-template-columns: 385px auto;
+   justify-content: center;
+   align-items: center;
+}
+.header{
+   
+   background: #86A3B4;
+   font-weight: 600;
+   border: 1px solid black;
+}
 
- 
-   img{
-   border: 2px solid rgba(17, 61, 58, 0.61);
-   padding: 10px;
-   max-width: 100px;
-   max-height: 100px;
-   float: right;
+   .head{
+   font-size: 36px;
+   line-height: 44px;
+   }
+   .smallerfont{
+    font-size: 32px;
+   line-height: 39px;
+   }
+
+  .border{
+   border-bottom: 6px solid #1E1E1E;;
+     }
+   
+   .image{
+   display: block; 
+   max-height: 150px;
+   max-width: 150px;
    
   }   
  
-  .head{
-   float: left;
-  } 
+ 
+  .maincontainer{
+   width: 706px;
+   padding: 58px 55px 0 55px ;
 
-  .table{
-   clear: both;
-   }
-
-  table{
-   background-color: rgba(222,219,167,1); 
-   width: 100%;
-   }
-   
-  
+  }
