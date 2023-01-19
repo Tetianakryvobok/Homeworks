@@ -15,70 +15,101 @@ body{
    max-width: 1200px;
    max-height: 1667px;
    display:flex;
+   justify-content: baseline;
    
  
  
 }
 
 .header{
-   background: #86A3B4;
-   font-weight: 600;
-   border-right: 1px solid black;
-   
+background: #86A3B4;
+font-weight: 600;
+border-right: 1px solid black;
+
 }
    
-.mainhead{
+.name{
+width: 260px;
+height: 96px;
 font-size: 40px;
 line-height: 48px;
 color: rgba(28, 46, 140, 1);
-
+margin: 58px 0 0 40px;
 }
 
-.headinfo{
-   
-   
-   
-
+.name::first-line{
+   color: white;
 }
 
+.image{
+   height: 292px;
+   ;  
+ 
+  } 
 
-   .head{
+.info_container{
+   margin: 50px 0 0 40px;
+   color: #263036;
+}
+.head{
    font-size: 36px;
    line-height: 44px;
-   }
-
-   .header >p{
-   font-size: 20px;
-   line-height: 24px;
-   color: #1E1E1E;
-   }
-   .smallerfont{
-    font-size: 32px;
-   line-height: 39px;
-   }
-
-  .border{
-   border-bottom: 6px solid #1E1E1E;;
-     }
    
-   .image{
-   display: block; 
-   max-width: 385px;
-   max-height: 292px;
+   }
+.first_container .infohead{
+font-size: 24px;
+line-height: 29px;
+margin: 31px 0 0;
+padding: 0;
+}
+
+.first_container .info{
+font-size: 16px;
+ line-height: 19px;
+ margin: 11px 11px 0 0;
+ padding: 0;
+}
+
+.info.blue{
+color: #1C2E8C;}
+
+.second_container .infolang{
+font-size: 20px;
+line-height: 24px;
+}
+
+.head{
+ font-size: 36px;
+ line-height: 44px;
+ padding-bottom: 28px;
+ }
+
+ .head.padding{
+   padding-bottom: 15px;
+ }
+.border{
+   border-bottom: 5px solid #000000;
    
-  }   
- 
+ }
+ .info_container .border{
+   border-bottom: 6px solid #1E1E1E; 
+   margin-right: 54px;
+} 
+
  
 .maincontainer{
-  
    width: 706px;
-   padding: 58px 55px 0 55px ;
+   margin-left: 55px;
    
   }
+.head.top{
+   margin-top: 58px;
 
- .maincontainer p{
-   margin: 0;
- }
+}
+.head.main{
+
+}
+
 .textstyle{
 font-weight: 600;
 font-size: 16px;
@@ -97,9 +128,7 @@ column-gap: 20px;
    font-weight: bold;
 }
 
-.workcontainer{
-   
-}
+
 .fonttype{
 font-size: 14px;
 line-height: 17px;}
@@ -112,3 +141,9 @@ line-height: 17px;}
    margin: 15px 54px 0 0;
 }
 
+.smallerfont{
+   font-size: 32px;
+  line-height: 39px;
+  }
+
+ 
