@@ -4,56 +4,61 @@
 <head>
 
    <title>Job offer</title>
-
+   <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-   <main>
-      <h1>Offer a job</h1>
+   <div class="form_wrapper">
+   <main> 
+      <h1>Hire me</h1>
       <h2>Contact information</h2>
-      <table border="1" cellspacing="0" cellpadding="10">
+      <table class="table_border" cellspacing="0" cellpadding="10">
          <tbody>
             <tr>
-               <td><strong>Phone</strong></td>
-               <td>+380933333000</td>
+               <td class="semibold table_border">Phone</td>
+               <td class="table_border">+380639438235</td>
             </tr>
             <tr>
-               <td><strong>Address</strong></td>
-               <td>Ukraine, Kyiv</td>
+               <td class="semibold table_border">Address</td>
+               <td class="table_border">Ukraine, Kyiv</td>
             </tr>
          </tbody>
       </table>
-      <br />
-
+      
+      <div class="form_container">
       <form action="/form.html" name="data" method="get">
          <fieldset>
             <legend>Contact form</legend>
-
-            <label>
-               E-mail:
-               <input type="text" name="useremail" required />
-            </label>
-            <br /> <br />
-
+            <div>
+            <label class="asterick" for="email">
+               E-mail:</label>
+               <input type="email" class="email" id="email" name="useremail" required />
+            
+            <p class="erroremail">Error message</p>
+            </div>
+            <div>
             <label>
                Description:
                <textarea name="description" cols="30" rows="10">  </textarea>
-
-            </label><br />
-
+            </label>
+            </div>
+           <div>
             <label>
                Work type: <select name="worktype">
                   <option value="office_work">Office work</option>
                   <option value="remote_work"> Remote work</option>
                   <option value="time_of_work"> One-off project</option>
-               </select></label>
-            <br />
+               </select>
+            </label>
+            </div>
 
             <input type="submit" value="Hire me" />
 
          </fieldset>
       </form>
-   </main>
+   </div>
+      </main>
+</div>
 
 </body>
 
