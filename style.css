@@ -221,8 +221,8 @@ grid-gap: 15px;
 }
 input,
 textarea,
-select,
- {margin-top: 2px;
+select {
+margin-top: 2px;
 font-weight: 400;
 font-size: 16px;
 border-radius: 4px}
@@ -299,4 +299,4 @@ display: block;
 .asterick::after {
    content: "*";
    font-weight: bold;
-   color: red;
+   color: red;}
