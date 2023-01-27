@@ -29,7 +29,7 @@ margin: 58px 0 36px 40px;
 }
 
 .name::first-line{
-   color: white;
+ color: white;
 }
 
 .image{
@@ -39,36 +39,51 @@ margin: 58px 0 36px 40px;
    object-fit: contain;
       
   } 
-
-.info_container{
-   margin: 50px 0 0 40px;
+  .title{
+   font-size: 32px;
+   line-height: 39px;
    color: #263036;
+    }
+  .padding{
+   padding-bottom: 15px;
+  }
+   .border{
+   border-bottom: 5px solid #000000;
+   margin-right: 100px;
+     }
+   
+.info_container{
+margin: 50px 0 0 40px;
 }
+
+.info_container .border{
+   border-bottom: 6px solid #1E1E1E; 
+   margin-right: 54px;
+} 
+
 .textstyle{
    font-weight: 600;
    font-size: 16px;
    line-height: 19px;
    color: #263036;
    }
-.head{
-   font-size: 36px;
-   line-height: 44px;
-   
+.margin{
+  margin: 36px 0 36px 0;
    }
-.first_container .infohead{
+
+.first_container .style{
+   margin-bottom: 11px;
+   padding: 0;
+}   
+.infohead{
 font-size: 24px;
 line-height: 29px;
-margin: 31px 0 0;
-padding: 0;
 }
 
-.first_container .info{
-margin: 11px 11px 0 0;
-padding: 0;
+.blue{
+   color: #1C2E8C;
+   text-decoration: none;
 }
-
-.info.blue{
-color: #1C2E8C;}
 
 .second_container .infolang{
 font-size: 20px;
@@ -76,47 +91,27 @@ line-height: 24px;
 color: #1E1E1E;
 }
 
-.title{
- font-size: 36px;
- line-height: 44px;
- 
- }
-
- .title.padding{
-   padding-bottom: 15px;
- }
-.border{
-   border-bottom: 5px solid #000000;
-   margin-right: 100px;
-   
- }
- .info_container .border{
-   border-bottom: 6px solid #1E1E1E; 
-   margin-right: 54px;
-} 
-
- 
 .maincontainer{
    width: 706px;
    margin-left: 55px;
-   
-   
-  }
-.title-main.top{
-   margin-top: 58px;
 }
-.maincontainer .sizes{
-   margin: 28px 54px 0 0;
+
+.summary_container{
+   margin: 58px 54px 0 0;
+}
+
+.sizes{
+   margin-top: 28px;
+}
+.main-margin{
+   margin-bottom: 49px;
 }
 .title-main{
-font-weight: 600;
 font-size: 36px;
 line-height: 44px;
 color: #1E1E1E;
 }
-.title-main.padding{
-padding-bottom: 28px;
-}
+
 .list{
 margin-left: -20px;
 column-count: 2;
@@ -124,10 +119,6 @@ width: 100%;
 column-gap: 27px;
 }
 
-.workcontainer{
-margin-top: 49px;
-
-}
 .workcontainer p{
  margin: 0;
 padding: 0;
@@ -149,17 +140,6 @@ font-weight: 400;
 
 .block-2{
    margin: 15px 54px 0 0;
-}
-.edu_container{
-   margin-top: 53px;
-   
-}
-
-.edu_container .title-main{
-font-weight: 600;
-font-size: 36px;
-line-height: 44px;
-color: #1E1E1E;
 }
 
 .edu_container p{
