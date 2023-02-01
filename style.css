@@ -49,6 +49,7 @@ margin: 58px 0 36px 40px;
    display: block;
    width: 385px;
    height: 292px;
+   max-width: 100%;
    object-fit: contain;
       
   } 
@@ -59,7 +60,7 @@ margin: 58px 0 36px 40px;
    border-radius: 6px;
    width: 20%;
    padding: 10px 16px;
-   margin: 20px 140px;
+   margin: 20px 135px;
    text-align: center;
    text-decoration: none;
    
@@ -187,11 +188,17 @@ margin: 58px 0 36px 40px;
       max-width:385px;
       display:flex;
       flex-direction:column;
-         }
+      }
 
       .info_container{
-         
+      margin: 0 20px 60px 30px;
       }
+      .maincontainer{
+      margin:25px;
+       }
+       .border{
+       margin-right: 30px;
+       }
 }
 
 
