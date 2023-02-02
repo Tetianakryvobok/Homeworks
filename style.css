@@ -30,7 +30,6 @@ background: var(--color-bg-header);
 border-right-color: var(--color-main-type2);
 border-right-style: solid;
 border-width: 1px;
-box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
 }
    
 .name{
@@ -51,13 +50,9 @@ margin: 58px 0 36px 40px;
    max-width: 385px;
    max-height: 292px;
    margin: 0 auto;
-   
-       
+         
   } 
-  .image:hover{
-   transform: scale(2);
-   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.453);
-  }
+  
 .button{
    display: inline-block;
    background: var(--color-buttom-header);
@@ -197,9 +192,6 @@ margin: 58px 0 36px 40px;
       display:flex;
       flex-direction:column;
        }
-   .header{
-      box-shadow: none;
-   }
       .info_container{
       margin: 0 20px 60px 30px;
       }
@@ -209,10 +201,16 @@ margin: 58px 0 36px 40px;
        .border{
        margin-right: 30px;
        }
-       .image:hover{
-         transform: none;}
+      
 }
-
+@media screen and (min-width:1100px){
+.image:hover{
+   transform: scale(2);
+   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.453);
+  }
+  .header{
+  box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);}
+}
 
 
 /*Styles for the form*/
