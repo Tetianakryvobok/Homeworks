@@ -21,7 +21,7 @@ body{
    .wrapper{
    max-width: 1200px;
    display:flex;
-   height: 1667px;
+   min-height: 1667px;
      
 }
 
@@ -49,6 +49,7 @@ margin: 58px 0 36px 40px;
    display: block;
    width: 385px;
    height: 292px;
+   max-width: 100%;
    object-fit: contain;
       
   } 
@@ -57,14 +58,15 @@ margin: 58px 0 36px 40px;
    background: var(--color-buttom-header);
    color: var(--color-font-name);
    border-radius: 6px;
+   width: 20%;
    padding: 10px 16px;
-   margin: 20px 150px 0;
+   margin: 20px 135px;
    text-align: center;
    text-decoration: none;
    
    }
    .title{
-      font-size: 32px;
+      font-size: 2em;
       line-height: 39px;
       color: var(--color-font-main);
        }
@@ -91,7 +93,7 @@ margin: 58px 0 36px 40px;
    
    .textstyle{
       font-weight: 600;
-      font-size: 16px;
+      font-size: 1em;
       line-height: 19px;
       color:var(--color-font-main);
       }
@@ -105,7 +107,7 @@ margin: 58px 0 36px 40px;
       padding: 0;
    }   
    .infohead{
-   font-size: 24px;
+   font-size: 1.5em;
    line-height: 29px;
    }
    
@@ -115,19 +117,19 @@ margin: 58px 0 36px 40px;
    }
    
    .second_container .infolang{
-   font-size: 20px;
+   font-size: 1.25em;
    line-height: 24px;
    color:var(--color-font-type1); 
    }
  
    .maincontainer{
-   width: 706px;
+   max-width: 706px;
    margin-left: 55px;
    
    }
    
    .summary_container{
-      margin: 58px 54px 0 0;
+      margin-top: 58px;
    }
    
    .sizes{
@@ -137,7 +139,7 @@ margin: 58px 0 36px 40px;
       margin-bottom: var(--margin-main-bottom);
    }
    .title-main{
-   font-size: 36px;
+   font-size: 2.25em;
    line-height: 44px;
    color: var(--color-font-type1); 
    }
@@ -159,7 +161,7 @@ margin: 58px 0 36px 40px;
    }
    
    .textstyle-w{
-   font-size: 14px;
+   font-size: 0.875em;
    line-height: 17px;
    font-weight: 400;
    color:var(--color-main-type2);
@@ -180,7 +182,24 @@ margin: 58px 0 36px 40px;
    .normal{
       font-weight: 400;
    }
+@media screen and (max-width:700px) {
+   .wrapper{
+      min-height:2700px;
+      max-width:385px;
+      display:flex;
+      flex-direction:column;
+      }
 
+      .info_container{
+      margin: 0 20px 60px 30px;
+      }
+      .maincontainer{
+      margin:25px;
+       }
+       .border{
+       margin-right: 30px;
+       }
+}
 
 
 
