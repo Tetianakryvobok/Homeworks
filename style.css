@@ -30,6 +30,7 @@ background: var(--color-bg-header);
 border-right-color: var(--color-main-type2);
 border-right-style: solid;
 border-width: 1px;
+box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
 }
    
 .name{
@@ -47,12 +48,15 @@ margin: 58px 0 36px 40px;
 
 .image{
    display: block;
-   width: 385px;
-   height: 292px;
-   max-width: 100%;
-   object-fit: contain;
-      
+   max-width: 385px;
+   max-height: 292px;
+   margin: 0 auto;
+         
   } 
+  .image:hover{
+   transform: scale(2);
+   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.453);}
+  
 .button{
    display: inline-block;
    background: var(--color-buttom-header);
@@ -60,14 +64,14 @@ margin: 58px 0 36px 40px;
    border-radius: 6px;
    width: 20%;
    padding: 10px 16px;
-   margin: 20px 135px;
+   margin: 1.25em 8em;
    text-align: center;
    text-decoration: none;
    
    }
    .title{
-      font-size: 2em;
-      line-height: 39px;
+      font-size: 2rem;
+      line-height: 2.4rem;
       color: var(--color-font-main);
        }
    .padding{
@@ -93,7 +97,7 @@ margin: 58px 0 36px 40px;
    
    .textstyle{
       font-weight: 600;
-      font-size: 1em;
+      font-size: 1rem;
       line-height: 19px;
       color:var(--color-font-main);
       }
@@ -107,7 +111,7 @@ margin: 58px 0 36px 40px;
       padding: 0;
    }   
    .infohead{
-   font-size: 1.5em;
+   font-size: 1.5rem;
    line-height: 29px;
    }
    
@@ -117,7 +121,7 @@ margin: 58px 0 36px 40px;
    }
    
    .second_container .infolang{
-   font-size: 1.25em;
+   font-size: 1.25rem;
    line-height: 24px;
    color:var(--color-font-type1); 
    }
@@ -139,8 +143,8 @@ margin: 58px 0 36px 40px;
       margin-bottom: var(--margin-main-bottom);
    }
    .title-main{
-   font-size: 2.25em;
-   line-height: 44px;
+   font-size: 2.25rem;
+   line-height: 2.7rem;
    color: var(--color-font-type1); 
    }
    
@@ -161,8 +165,8 @@ margin: 58px 0 36px 40px;
    }
    
    .textstyle-w{
-   font-size: 0.875em;
-   line-height: 17px;
+   font-size: 0.875rem;
+   line-height: 1.063rem;
    font-weight: 400;
    color:var(--color-main-type2);
    }
@@ -173,8 +177,11 @@ margin: 58px 0 36px 40px;
    
    .block-2{
       margin: 15px 54px 0 0;
+      opacity:.7;
    }
-   
+   .block-2:hover{
+      opacity: 1;
+   }
    .edu_container p{
       margin: 0;
       padding: 0;
@@ -185,21 +192,32 @@ margin: 58px 0 36px 40px;
 @media screen and (max-width:700px) {
    .wrapper{
       min-height:2700px;
-      max-width:385px;
-      display:flex;
+       display:flex;
       flex-direction:column;
-      }
+       }
 
+       .header{
+         box-shadow: none;
+       }
       .info_container{
-      margin: 0 20px 60px 30px;
+      margin: 0 1.25em 3.75em 1.8em;
       }
       .maincontainer{
-      margin:25px;
+      margin: 1em;
+       }
+       .title-main{
+         font-size: 2rem;
        }
        .border{
-       margin-right: 30px;
+       margin-right: 1.8em;
+       }
+       .image:hover{
+      transform: none;
+      box-shadow: none;
        }
 }
+
+  
 
 
 
