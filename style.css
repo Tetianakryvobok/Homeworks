@@ -31,8 +31,19 @@ border-right-color: var(--color-main-type2);
 border-right-style: solid;
 border-width: 1px;
 box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
+animation: blocks 1s linear;
 }
-   
+   @keyframes blocks{
+      from{
+         margin-top: 50vh;
+         opacity: 0;
+      }
+      to{
+         margin-top: 0;
+         opacity: 1;
+      }
+   }
+
 .name{
 width: 260px;
 height: 96px;
@@ -51,12 +62,13 @@ margin: 58px 0 36px 40px;
    max-width: 385px;
    max-height: 292px;
    margin: 0 auto;
-         
+   transition: transform 1s;      
   } 
   .image:hover{
    transform: scale(2);
-   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.453);}
-  
+   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.453);
+   }
+
 .button{
    display: inline-block;
    background: var(--color-buttom-header);
@@ -129,7 +141,7 @@ margin: 58px 0 36px 40px;
    .maincontainer{
    max-width: 706px;
    margin-left: 55px;
-   
+   animation: blocks 1.5s linear;
    }
    
    .summary_container{
@@ -169,6 +181,7 @@ margin: 58px 0 36px 40px;
    line-height: 1.063rem;
    font-weight: 400;
    color:var(--color-main-type2);
+   transition: opacity 1.5s;
    }
    
    .block-1{
@@ -178,6 +191,7 @@ margin: 58px 0 36px 40px;
    .block-2{
       margin: 15px 54px 0 0;
       opacity:.7;
+      
    }
    .block-2:hover{
       opacity: 1;
@@ -251,8 +265,24 @@ display: grid;
 grid-template-columns: 100px 1fr;
 grid-gap: 15px;
 justify-content: center;
+animation: form 1.5s linear; 
 }
 
+@keyframes form{
+   from{
+      transform: scale(2);
+      opacity: 0;
+      
+   }
+   to{
+      transform: scale(1);
+      opacity: 1;
+      top: 50%;
+      left:50%;
+      width: 35%;
+      transform: translate(-50%, -50%);
+   }
+}
 label{
    height: 25px;
    font-weight: 400;
