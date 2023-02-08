@@ -1,29 +1,4 @@
-body{
-   font-family: Arial, Helvetica, sans-serif;
-   box-sizing: border-box;
-   
-  }
-  .main-theme{
-   /*colors*/
-   --color-bg-header:#86A3B4;
-   --color-buttom-header:#0048D9;
-   --color-font-main:#263036;
-   --color-font-type1:#1E1E1E;
-   --color-font-linksname:#1C2E8C;
-   --color-font-name:#FFFFFF;
-   --color-main-type2:#000000;
-   
-   /*sizes*/
-   --margin-main-bottom:49px;
-   --margin-header-bottom:36px;
-   --padding-title-bottom:15px;
-      }
-   .wrapper{
-   max-width: 1200px;
-   display:flex;
-   min-height: 1667px;
-     
-}
+
 
 .header{
 background: var(--color-bg-header);
@@ -44,18 +19,18 @@ animation: blocks 1s linear;
       }
    }
 
-.name{
-width: 260px;
-height: 96px;
-font-size: 40px;
-line-height: 48px;
-color: var(--color-font-linksname);
-margin: 58px 0 36px 40px;
-}
+   .name{
+      width: 260px;
+      height: 96px;
+      font-size: 40px;
+      line-height: 48px;
+      color: $color-font-linksname;
+      margin: 58px 0 36px 40px;    
+      }
 
-.name::first-line{
-   color: var(--color-font-name);
-}
+   .name::first-line{
+      color: $color-font-name;
+      }
 
 .image{
    display: block;
