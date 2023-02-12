@@ -1,5 +1,21 @@
 @import "main-theme";
 @import "my-theme";
+
+@mixin blocks_animation ($animationduration){
+  @keyframes blocks {
+    from {
+      margin-top: 50vh;
+      opacity: 0;
+    }
+    to {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+  animation-name: blocks;
+  animation-duration: $animationduration;
+  animation-timing-function: linear;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
@@ -16,17 +32,7 @@ body {
   border-right-style: solid;
   border-width: 1px;
   box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
-  animation: blocks 1s linear;
-  @keyframes blocks {
-    from {
-      margin-top: 50vh;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0;
-      opacity: 1;
-    }
-  }
+  @include blocks_animation(1s);  
 }
 
 .name {
@@ -124,7 +130,7 @@ body {
 .maincontainer {
   max-width: 706px;
   margin-left: 55px;
-  animation: blocks 1.5s linear;
+  @include blocks_animation(1.5s); 
 }
 .summary_container {
   margin-top: 58px;
