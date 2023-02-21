@@ -1,26 +1,30 @@
 @import "main-theme";
 @import "my-theme";
 
-@mixin blocks_animation ($animationduration){
-  @keyframes blocks {
-    from {
-      margin-top: 50vh;
-      opacity: 0;
-    }
-    to {
-      margin-top: 0;
-      opacity: 1;
-    }
-  }
+@mixin blocks_animation($animationduration) {
   animation-name: blocks;
   animation-duration: $animationduration;
   animation-timing-function: linear;
+}
+@keyframes blocks {
+  from {
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-
+:root {
+  --margin-main-bottom: 49px;
+  --margin-header-bottom: 36px;
+  --padding-title-bottom: 15px;
+}
 .wrapper {
   max-width: 1200px;
   display: flex;
@@ -32,7 +36,7 @@ body {
   border-right-style: solid;
   border-width: 1px;
   box-shadow: 1px 0px 13px 7px rgba(80, 75, 75, 0.25);
-  @include blocks_animation(1s);  
+  @include blocks_animation(1s);
 }
 
 .name {
@@ -130,7 +134,7 @@ body {
 .maincontainer {
   max-width: 706px;
   margin-left: 55px;
-  @include blocks_animation(1.5s); 
+  @include blocks_animation(1.5s);
 }
 .summary_container {
   margin-top: 58px;
@@ -259,18 +263,15 @@ button {
 
 @keyframes form {
   from {
-    transform: scale(2);
+    transform: translate(-50%, -50%) scale(2);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    top: 50%;
-    left: 50%;
-    width: 35%;
-    transform: translate(-50%, -50%);
   }
 }
+
 label {
   height: 25px;
   font-weight: 400;

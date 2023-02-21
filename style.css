@@ -6,9 +6,6 @@
   --color-font-linksname: #1c2e8c;
   --color-font-name: #ffffff;
   --color-main-type2: #000000;
-  --margin-main-bottom: 49px;
-  --margin-header-bottom: 36px;
-  --padding-title-bottom: 15px;
 }
 
 .my-theme {
@@ -21,9 +18,36 @@
   --color-main-type2:rgb(34, 33, 33);
 }
 
+@-webkit-keyframes blocks {
+  from {
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes blocks {
+  from {
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  to {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+}
+
+:root {
+  --margin-main-bottom: 49px;
+  --margin-header-bottom: 36px;
+  --padding-title-bottom: 15px;
 }
 
 .wrapper {
@@ -44,26 +68,6 @@ body {
           animation-duration: 1s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
-@-webkit-keyframes blocks {
-  from {
-    margin-top: 50vh;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0;
-    opacity: 1;
-  }
-}
-@keyframes blocks {
-  from {
-    margin-top: 50vh;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0;
-    opacity: 1;
-  }
 }
 
 .name {
@@ -171,16 +175,6 @@ body {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
-@keyframes blocks {
-  from {
-    margin-top: 50vh;
-    opacity: 0;
-  }
-  to {
-    margin-top: 0;
-    opacity: 1;
-  }
 }
 
 .summary_container {
@@ -313,31 +307,23 @@ button {
 
 @-webkit-keyframes form {
   from {
-    transform: scale(2);
+    transform: translate(-50%, -50%) scale(2);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    top: 50%;
-    left: 50%;
-    width: 35%;
-    transform: translate(-50%, -50%);
   }
 }
 
 @keyframes form {
   from {
-    transform: scale(2);
+    transform: translate(-50%, -50%) scale(2);
     opacity: 0;
   }
   to {
-    transform: scale(1);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
-    top: 50%;
-    left: 50%;
-    width: 35%;
-    transform: translate(-50%, -50%);
   }
 }
 label {
